@@ -13,7 +13,7 @@ btnPerguntar.addEventListener("click", async e => {
         const body = {
             "model": "gpt-3.5-turbo",
             "messages": conversation,
-            "temperature": 0.9
+            "temperature": 1
         };
 
         fetch("https://api.openai.com/v1/chat/completions", {
