@@ -9,7 +9,8 @@
 
 body{
     background-color: var(--page-background);
-        transition: all linear .2s;
+    transition: all linear .2s;
+    height: 100vh;
 }
 .models{
     display: none;
@@ -91,6 +92,7 @@ header button{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    height: fit-content;
     justify-content: space-between;
     
 }
@@ -106,7 +108,7 @@ header button{
 
 .inputs{
     border: 2px solid var(--green-500);
-    height: 50px;
+    height: 60px;
     border-radius: 99px;
     padding: 10px;
     display: flex;
@@ -124,7 +126,7 @@ header button{
     border: none;
     padding: 15px 25px;
     display: flex;
-    height: 70%;
+    height: 90%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -164,7 +166,7 @@ input::placeholder {
 
 .mensagens{
     max-height: 500px;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -204,6 +206,69 @@ input::placeholder {
     height: 30px;
 
 }
+
+
+
+.menulateral{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    gap: 20px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--eternal-dark);
+-webkit-box-shadow: 11px 3px 21px -7px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 11px 3px 21px -7px rgba(0, 0, 0, 0.72);
+    box-shadow: 11px 3px 21px -7px rgba(0, 0, 0, 0.72);    padding: 20px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: var(--eternal-white);
+        z-index: 5;
+        
+
+}
+
+
+.menulateral span{
+    color: var(--green-500);
+}
+
+.headerMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.headerMenu img , header img{
+    cursor: pointer;
+}
+
+.options{
+    background-color: var(--page-background);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.options:hover{
+        background-color: #0ec1656b;
+}
+
+a{
+    width: fit-content;
+    text-decoration: none;
+    color: var(--eternal-white);
+}
+
+
+
+
+
+
+
 
 @media (max-width:800px) {
 
