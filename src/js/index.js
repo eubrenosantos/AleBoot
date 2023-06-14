@@ -1,4 +1,4 @@
-let auth = "Bearer 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"
+let auth = "Bearer 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"
 
 let btnPerguntar = document.querySelector(".inputs button")
 

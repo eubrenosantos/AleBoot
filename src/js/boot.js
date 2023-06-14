@@ -20,7 +20,7 @@ const sendBootMsn = (bootResponse)=>{
 
     let areaConversation = document.querySelector(".mensagens")
     let boot = document.querySelector(".models .boot").cloneNode(true)
-    console.log(bootResponse.choices)
+    console.log(bootResponse.choices[0].message.content)
     boot.innerHTML = bootResponse.choices[0].message.content;
     areaConversation.append(boot)
     document.querySelector('input').disabled = false;
